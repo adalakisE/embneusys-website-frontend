@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,h2,h3,h4,h5,h6{
+    @apply text-title;
+}
+
+p{
+    @apply text-paragraph;
+}
+
+.casual-blue-button{
+    @apply bg-blue px-3 md:px-9 py-2 mx-1 rounded-3xl text-white ;
+}
+.casual-white-button{
+    @apply bg-white px-3 md:px-9 py-2 mx-1 rounded-3xl text-title;
+}
+a{
+    @apply ease-in-out duration-500 border-b-[1px] border-transparent;
+}
+a:hover{
+    @apply border-black;
+}
+html {
+    scroll-behavior: smooth;
+}
+*{
+    @apply font-sans;
+}
