@@ -21,11 +21,11 @@
             </a>
 
           <div class="ml-5 block md:hidden relative" @click="showMobileMenu = !showMobileMenu">
-            <button class="hamburger hamburger--slider" type="button" :class="showMobileMenu? 'is-active' :''">
+            <div class="hamburger hamburger--slider" type="button" :class="showMobileMenu? 'is-active' :''">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
-              </button>
+              </div>
           </div>
 
 
