@@ -5,7 +5,7 @@
 
     <div class="container py-28">
 
-      <h2 class="text-3xl text-paragraph text-center mb-12">
+      <h2 class=" text-paragraph text-center mb-12">
         <img src="@/assets/images/logo-icon.png"  alt="logo icon" class="inline mr-3" width="40"/>
         {{$t('testimonials.title')}}
         <img src="@/assets/logo-text.webp" alt="logo text"  class="inline ml-1" width="140"/>

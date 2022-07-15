@@ -2,8 +2,8 @@ export default{
     title1: 'IoT Solution',
     title2: 'for Construction and Mining Machinery',
     agnostic: 'Agnostic to brand or size',
-    hero1:'If you are a construction or mining company, you know that machinery is the most essential part of your work We make them count' +
-        ' for you and you can take the best out of them',
+    hero1:'If you are a construction or mining company, you know that machinery is the most essential part of your work.',
+    hero2: 'We make them count for you and you can take the best out of them.',
     viewDemo: 'see the demo',
     contact: 'Contact',
     copyright: '© 2021-2022 embneusys. All rights reserved',

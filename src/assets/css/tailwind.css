@@ -6,6 +6,12 @@ h1,h2,h3,h4,h5,h6{
     @apply text-title;
 }
 
+.container{
+    /*@apply max-w-[1000px];*/
+
+    max-width:1200px!important;
+}
+
 p{
     @apply text-paragraph;
 }
@@ -27,4 +33,10 @@ html {
 }
 *{
     @apply font-sans;
+}
+h2{
+    @apply text-2xl md:text-3xl;
+}
+h3{
+    @apply text-xl md:text-2xl;
 }

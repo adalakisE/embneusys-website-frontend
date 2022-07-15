@@ -5,7 +5,7 @@
 
     <div class="container py-28">
 
-      <h2 class="text-3xl text-paragraph text-center mb-12">{{$t('efficiency.title')}}</h2>
+      <h2 class=" text-paragraph text-center mb-12">{{$t('efficiency.title')}}</h2>
       <div class="grid md:grid-cols-3">
 
         <div v-for="feature in features" :key="feature" class="my-4 md:pr-12 text-center">
@@ -16,7 +16,7 @@
             </span>
           </div>
 
-          <p class="md:max-w-[70%] md:mx-auto mt-12 font-bold">
+          <p class="md:max-w-[70%] md:mx-auto mt-12 font-light">
             {{$t('efficiency.' + feature + '.paragraph')}}
           </p>
 
@@ -40,9 +40,9 @@
         </div>
         <div class="col-span-4 order-1 md:order-2 mb-12 md:mb-0">
 
-          <div class="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-8 ">
+          <div class="grid grid-cols-1 gap-2 md:gap-8 ">
             <div v-for="tab in tabs" :key="'tab-'+tab" class="">
-              <button class="block w-[100%] md:w-[75%]" :class="tab === activeTab ? 'casual-blue-button' : 'casual-white-button'" @click="activeTab = tab">
+              <button class="block w-[100%] " :class="tab === activeTab ? 'casual-blue-button' : 'casual-white-button'" @click="activeTab = tab">
                 {{ $t('efficiency.tabs.'+tab + '.title') }}
 
               </button>

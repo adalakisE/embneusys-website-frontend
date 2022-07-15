@@ -4,8 +4,8 @@
   <div class="container py-28">
 
     <div class="text-center">
-      <h3 class="text-3xl text-paragraph">{{$t('faq.title')}}</h3>
-      <h6 class="text-primary text-normal mt-4">{{$t('faq.subtitle')}}
+      <h2 class=" text-paragraph">{{$t('faq.title')}}</h2>
+      <h6 class="text-primary font-bold mt-4">{{$t('faq.subtitle')}}
         <img src="@/assets/logo-text.webp" alt="logo text"  class="inline ml-1" width="100"/></h6>
     </div>
 
@@ -21,12 +21,13 @@
         </div>
 
 
-        <div v-if="activeFaqs[faq]" class="my-6">
-          <p class="text-title">
-            {{$t('faq.' + faq  +'.content')}}
-          </p>
-
-        </div>
+        <transition name="slide">
+          <div :key="faq" class="faq" :class="activeFaqs[faq] ? 'expanded' : ''">
+            <p class="text-title">
+              {{$t('faq.' + faq  +'.content')}}
+            </p>
+          </div>
+        </transition>
       </div>
     </div>
 
@@ -38,7 +39,7 @@
       <h4 class="text-xl text-paragraph">{{$t('faq.partnership')}}</h4>
 
       <img src="@/assets/images/logos.webp" alt="partnership logos" class="mt-12 mb-20 md:max-w-[650px] mx-auto"/>
-      <h2 class="text-3xl text-primary mx-auto mt-8 max-w-[600px]">
+      <h2 class=" text-primary mx-auto mt-8 max-w-[600px]">
         {{$t('faq.why')}}
       </h2>
       <img src="@/assets/images/logo-icon.png" alt="logo icon" class="max-w-[60px] my-8 mx-auto"/>
@@ -54,7 +55,14 @@
 
 
 </template>
-
+<style>
+.faq{
+  @apply opacity-0 h-0 invisible ease-out duration-500;
+}
+.expanded{
+  @apply py-6 visible h-auto opacity-100;
+}
+</style>
 <script>
 import Vue from "vue"
 export default{

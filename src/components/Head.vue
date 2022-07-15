@@ -15,8 +15,8 @@
 
           </div>
 
-            <a v-for="(lang, i) in locales" :key="`Lang${i}`" :value="lang.code" class="lang-switch"
-               :class="$i18n.locale === lang.code ? 'current' : ''" @click="changeLang(lang.code)">
+            <a v-for="(lang, i) in availableLocales" :key="`Lang${i}`" :value="lang.code" class="lang-switch"
+                @click="changeLang(lang.code)">
               {{ lang.text }}
             </a>
 
@@ -59,7 +59,7 @@
   backdrop-filter: blur(10px);
 }
 .lang-switch{
-  @apply p-2 cursor-pointer border-b-0 hover:border-b-0 font-bold duration-500 ease-in-out;
+  @apply p-2 cursor-pointer border-b-0 hover:border-b-0 duration-500 rounded hover:bg-white ease-in-out;
 }
 a.current{
   @apply bg-white cursor-default font-normal;
@@ -68,6 +68,11 @@ a.current{
 <script>
 export default{
 
+  computed:{
+    availableLocales(){
+      return this.locales.filter(x => x.code !== this.$i18n.locale);
+    }
+  },
   data(){
     return{
       locales: [{
