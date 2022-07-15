@@ -21,7 +21,11 @@
             </a>
 
           <div class="ml-5 block md:hidden relative" @click="showMobileMenu = !showMobileMenu">
-            m
+            <button class="hamburger hamburger--slider" type="button" :class="showMobileMenu? 'is-active' :''">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+              </button>
           </div>
 
 
@@ -49,8 +53,8 @@
 
 }
 .mobile-menu{
-  @apply absolute right-0 top-[72px] w-[100vw] px-12;
-  background-color: rgba(212,212,212,1);
+  @apply absolute right-0 top-[80px] w-[100vw] px-12;
+  background-color: rgba(245,245,245,0.95);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }

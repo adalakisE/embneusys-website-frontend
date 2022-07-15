@@ -3,6 +3,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import '@/assets/css/tailwind.css'
+import '@/assets/css/hamburger.css';
 import VueI18n from 'vue-i18n'
 import el from "@/assets/lang/el";
 import en from "@/assets/lang/en"
