@@ -1,7 +1,7 @@
 export default{
     title1: 'Προηγμένες λύσεις Internet of Things ',
     title2: 'για τον κατασκευαστικό και μεταλλευτικό τομέα',
-    agnostic: 'Agnostic to brand or size',
+    agnostic: 'Ανεξαρτήτως μεγέθους ή μάρκας',
     hero1:'Εάν είστε κατασκευαστική ή μεταλλευτική εταιρία, ο στόλος σας είναι από τα σημαντικότερα κομμάτια της εργασίας σας.',
     hero2: 'Εμείς θα σας βοηθήσουμε να τα εκμεταλλευτείτε στο έπακρον.',
     viewDemo: 'Δείτε ένα demo',
@@ -42,20 +42,20 @@ export default{
         },
     },
     efficiency: {
-        title: 'Bringing Efficiency Through',
+        title: 'Ανεβάστε επίπεδα παραγωγικότητας μέσω',
         1: {
             title:'80%',
-            paragraph:'better organizational insights for every construction site',
+            paragraph:'καλύτερες οργανωτικές πληροφορίες για κάθε εργοτάξιο',
             color: '#FFE076',
         },
         2: {
             title:'30%',
-            paragraph:'reduction in operational time',
+            paragraph:'Μείωση λειτουργικού χρόνου',
             color: '#93CDFF',
         },
         3:{
             title:'30%',
-            paragraph:'reduction in machinery repair costs',
+            paragraph:'μείωση στα κόστη επισκεύων',
             color: '#FFFFFF',
         },
         tabs:{
@@ -80,14 +80,14 @@ export default{
     },
 
     solutions:{
-        title: 'Systems Solutions Created For Every Industry',
-        subtitle: 'WE FULFILL OUR CUSTOMERS NEEDS',
+        title: 'Συστήματα και Λύσεις για κάθε κλάδο',
+        subtitle: 'ΕΚΠΛΗΡΩΝΟΥΜΕ ΤΙΣ ΑΝΑΓΚΕΣ ΤΩΝ ΠΕΛΑΤΩΝ ΜΑΣ',
 
     },
 
     faq: {
-        title: 'Frequently Asked Questions',
-        subtitle: 'LEARN MORE ABOUT',
+        title: ' Συχνές Ερωτήσεις',
+        subtitle: 'ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ',
         1:{
             title: 'Πως μπορώ να το εγκαταστήσω;',
             content: 'Η συσκευή είναι plug and play, απλά κολλήστε την πάνω στο μηχάνημα και θα ξεκινήσει τη λειτουργία.'
@@ -101,8 +101,8 @@ export default{
             content: 'Η συσκευή είναι επαναφορτιζόμενη. Απλά φορτίστε την όταν σαν ενημερώσει η εφαρμογή.'
         },
 
-        partnership: 'In Partnership With',
-        why: 'See For Yourself Why Successful Teams Move Faster In Embneusys',
+        partnership: 'Σε συνεργασία με',
+        why: 'Δείτε μόνοι σας γιατί πετυχημένες εταιρίες επιλέγουν την Embneusys',
         scheduleDemo: 'Δείτε ένα demo',
         or: 'ή',
         contact: 'επικοινωνήστε μαζί μας'
@@ -111,16 +111,16 @@ export default{
     testimonials: {
         title: 'We Are',
         1:{
-            person: 'Pavlos Kosmidis, Owner',
-            content: '“The Cube enables to see how our drills really perform on the field and how we can make them work better”'
+            person: 'Παύλος Κοσμίδης, Ιδιοκτήτης',
+            content: '“Το Cube μας επέτρεψε να δούμε πως αποδίδουμε τα γεωτρύπανα μας στο πεδίο και πως μπορούμε να τα κάνουμε να δουλεύουν καλύτερα”'
         },
         2:{
-            person: 'Kostas Pappas, Mine Director',
-            content: '“Embneusys’ solution will give us a first insight about what happens in the mine and how we can cut down operational costs”'
+            person: 'Κώστας Παππάς, Υπεύθυνος Λατομείου',
+            content: '“Η λύση της Embneusys μας έδωσε μια πρώτη εικόνα για το τι συμβαίνει στο λατομείο και πως μπορούμε να μειώσουμε τα λειτουργικά μας κόστη”'
         },
         3:{
-            person: 'Nikos Zinas, CEO',
-            content: '“Hardware has been easy with Embneusys’ Cube. Seamless integration and new possibilities for our clients”'
+            person: 'Νίκος Ζήνας, CEO',
+            content: '“Το hardware είναι εύκολο με την Embneusys. Άψογη ενσωμάτωση και νέες δυνατότητες για τους πελάτες μας.”'
         }
     }
 }

@@ -5,7 +5,7 @@
 
     <div class="text-center">
       <h2 class=" text-paragraph">{{$t('faq.title')}}</h2>
-      <h6 class="text-primary font-bold mt-4">{{$t('faq.subtitle')}}
+      <h6 class="text-primary uppercase font-bold mt-4">{{$t('faq.subtitle')}}
         <img src="@/assets/logo-text.webp" alt="logo text"  class="inline ml-1" width="100"/></h6>
     </div>
 
