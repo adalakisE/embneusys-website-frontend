@@ -24,14 +24,21 @@
 
 
       </div>
-      <img src="@/assets/images/efficiency.webp" alt="worker clothes" class=" block md:hidden rounded-3xl mx-auto my-12"/>
+      <div class="h-[200px] w-[100%] relative mb-6 block md:hidden">
+        <img :src="require('@/assets/images/efficiency-'+activeTab+'.webp')" alt="worker clothes"
+             class="w-[100%] h-[100%] object-cover rounded-3xl mx-auto mb-12"/>
+      </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-12 max-w-[900px] mx-auto">
 
         <div class="col-span-8 order-2 md:order-1">
           <div v-for="tab in tabs" :key="'tab-'+tab" class="">
 
-            <div v-if="activeTab === tab" class="max-w-[500px] mx-auto text-center md:text-left">
-              <img src="@/assets/images/efficiency.webp" alt="worker clothes" class="hidden md:block rounded-3xl mx-auto mb-12"/>
+            <div v-if="activeTab === tab" class="max-w-[500px] mx-auto text-center  md:text-left">
+              <div class="h-[250px] w-[100%] relative mb-6 hidden md:block">
+                <img :src="require('@/assets/images/efficiency-'+activeTab+'.webp')" alt="worker clothes"
+                     class="w-[100%] h-[100%] object-cover rounded-3xl mx-auto mb-12"/>
+
+              </div>
               {{ $t('efficiency.tabs.'+tab + '.content') }}
             </div>
 

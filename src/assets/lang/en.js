@@ -1,13 +1,14 @@
 export default{
-    title1: 'IoT Solution',
-    title2: 'for Construction and Mining Machinery',
+    title1: 'Advanced IoT Solutions',
+    title2: 'for the Construction and Mining Machinery',
     agnostic: 'Agnostic to brand or size',
     hero1:'If you are a construction or mining company, you know that machinery is the most essential part of your work.',
     hero2: 'We make them count for you and you can take the best out of them.',
     viewDemo: 'see the demo',
     contact: 'Contact',
     copyright: '© 2021-2022 embneusys. All rights reserved',
-
+    espa:'<p>The current work was financed under the Action “Investment Plans of Innovation“ in the ' +
+        'Region of Central Macedonia, under the framework of the Operational Program “Central Macedonia 2014-2020“, in the work with code <strong>ΚΜΡ6-0076940</strong>.</p>',
     menu:{
         solution: 'Our solution',
         about: 'About',
@@ -17,7 +18,7 @@ export default{
     },
 
     features:{
-        title: 'Reading, Understanding, Tracking Your Equipment Has Never Been Easier',
+        title: 'Monitoring, Understanding, Tracking Your Equipment Has Never Been Easier',
         1: {
             title: 'Receive',
             paragraph: 'From the moment the sensor is placed on your equipment, it starts sending data. Temperature, location, working hours, you name it, you won’t miss a byte!'
@@ -43,7 +44,7 @@ export default{
         },
         2: {
             title:'Sensor Installation',
-            paragraph: 'The sensors are glued at every asset on temporal or permanent glue, regarding its use and condition. ' +
+            paragraph: 'The sensors are attached effortlessly on every asset on a temporal or permanent basis, regarding its use and condition. ' +
                 'There is no need for time-costly installations and the sensor can be up and play in less than 10 minutes.'
         },
         3: {

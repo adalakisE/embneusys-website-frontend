@@ -25,8 +25,7 @@
         <img src="@/assets/images/home.webp" alt="construction building"  class="mx-auto md:mx-0 hidden md:block max-w-[80%] xl:max-w-[60%]" loading="lazy"/>
 
         <div style="background-image:url('./home.webp')" class="bg-center rounded-3xl bg-cover h-[255px] block md:hidden "/>
-        <img src="@/assets/images/espa-vertical.webp" alt="espa logo"  class="hidden md:block max-w-[35px] ml-3 "/>
-        <img src="@/assets/images/espa.webp" alt="espa logo"  class="block md:hidden block mx-auto max-w-[60%] mt-3 "/>
+<!--        <img src="@/assets/images/espa-vertical.webp" alt="espa logo"  class="hidden md:block max-w-[35px] ml-3 "/>-->
       </div>
     </div>
   </div>
