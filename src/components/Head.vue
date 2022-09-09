@@ -47,6 +47,7 @@
   left:0;
   right:0;
   opacity:0.99;
+  z-index:10;
   background-color: rgba(215, 215, 215, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
