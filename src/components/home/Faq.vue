@@ -38,7 +38,7 @@
     <div id="contact" class="text-center mt-12">
       <h4 class="text-xl text-paragraph">{{$t('faq.partnership')}}</h4>
 
-      <img src="@/assets/images/logos.webp" alt="partnership logos" class="mt-12 mb-20 md:max-w-[650px] mx-auto"/>
+      <img src="@/assets/images/logos-v2.jpg" alt="partnership logos" class="mt-12 mb-20 md:max-w-[650px] lg:max-w-[800px] mx-auto"/>
       <h2 class=" text-primary mx-auto mt-8 max-w-[600px]">
         {{$t('faq.why')}}
       </h2>
