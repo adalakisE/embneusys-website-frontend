@@ -3,13 +3,32 @@
 
 
     <hero/>
+    <div class="bg-blue py-4">
+      <div class="container">
+        <div class="md:flex items-center justify-center">
+          <div class="w-fit  bg-white  mb-2 md:mb-0 px-2 py-1 text-sm flex-shrink-0 mr-3">
+            {{ $t('marquee.title') }}
+          </div>
+
+          <div class="text-sm text-white mt-1">
+            <marquee direction="left" scrollamount="6" loop="-1" truespeed behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+              {{ $t('marquee.text') }}
+            </marquee>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
     <features id="features"/>
     <easy id="easy"/>
     <efficiency id="efficiency"/>
     <solutions id="solutions"/>
     <testimonials id="testimonials"/>
     <faq id="faq"/>
-    <img src="@/assets/images/espa.webp" alt="espa logo"  class="fixed bottom-2 right-0 cursor-pointer w-[250px] md:w-[20vw] block mt-3 " @click="showEspa = !showEspa"/>
+    <img src="@/assets/images/espa.webp" alt="espa logo"  class="fixed bottom-2 right-0 cursor-pointer w-[250px] md:w-[20vw] block mt-3 " @click="openEspaBanner"/>
 
     <div v-show="showEspa" class="pop-up fixed flex justify-center items-center top-0 left-0 right-0 bottom-0">
       <div class="overlay bg-black opacity-30 absolute top-0 left-0 bottom-0 right-0" @click.self="showEspa = false">
@@ -44,6 +63,14 @@ export default {
   data(){
     return{
       showEspa: false
+    }
+  },
+  methods:{
+    openEspaBanner(){
+      const lang = this.$i18n.locale;
+
+      if(lang === 'en') window.open('/espa_en.pdf');
+      else window.open('/espa_el.pdf');
     }
   }
 }

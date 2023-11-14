@@ -130,8 +130,12 @@ export default{
             content: '“Embneusys’ solution will give us a first insight about what happens in the mine and how we can cut down operational costs”'
         },
         3:{
-            person: 'Nikos Zinas, CEO',
-            content: '“Hardware has been easy with Embneusys’ Cube. Seamless integration and new possibilities for our clients”'
+            person: 'Johnatan Garcia Gonzalez, Technical Manager',
+            content: '“Embneusys’ solution is bringing us one step closer to achieve operational and green efficiency in the mines”'
         }
+    },
+    marquee:{
+        title: 'LATEST NEWS',
+        text: 'The enterprise «EMBNEUSYS PC» based in Central Macedonia Region, has joined the Action “Elevating Greek Startups against COVID 19 2nd CYCLE” with a total budget of  34 million €. The Action aims at the support of start-ups included in the National Register of Start-ups "Elevate Greece" in the form of a non-refundable grant as working capital to cover their expenses.'
     }
 }

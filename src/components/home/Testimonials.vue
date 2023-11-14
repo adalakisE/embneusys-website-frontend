@@ -38,7 +38,7 @@
 
         </div>
         <div class="bg-white h-[250px] md:col-span-9 rounded-xl py-8 px-12">
-          <img src="@/assets/images/testimonials/TEKNMON@2x.jpg" alt="teknmon logo" width="150"/>
+          <img src="@/assets/images/testimonials/noroeste.png" alt="Perforactiones Noroeste logo" width="200"/>
           <p class="font-medium mt-6">
             {{$t('testimonials.3.content')}}
 
