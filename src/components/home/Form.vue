@@ -174,6 +174,7 @@
 <script>
 import { ValidationObserver, ValidationProvider, extend } from "vee-validate";
 import { required, email, numeric } from "vee-validate/dist/rules";
+import axios from "axios";
 
 extend("required", required);
 extend("email", email);
@@ -201,9 +202,38 @@ export default {
     };
   },
   methods: {
-    submitForm() {
-      console.log("submitted successfully");
-      console.log(this.form);
+    // submitForm() {
+    //   console.log("submitted successfully");
+    //   console.log(this.form);
+    // },
+    async submitForm() {
+      try {
+        // Send form data as a POST request to the specified URL
+        const response = await axios.post(
+          "https://embneusys-website-backend.onrender.com/feed/form",
+          this.form
+        );
+
+        // Handle the response if needed
+        console.log("Form submitted successfully:", response.data);
+        // Reset form after successful submission
+        this.resetForm();
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        // Handle error here, show an error message, etc.
+      }
+    },
+    resetForm() {
+      // Reset form fields after successful submission
+      this.form = {
+        companyName: "",
+        email: "",
+        location: "",
+        mineSize: "",
+        pitOrUnderground: "",
+        level: "",
+        machineries: "",
+      };
     },
   },
 };
