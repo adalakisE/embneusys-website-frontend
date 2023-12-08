@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,h2,h3,h4,h5,h6{
-    @apply text-title;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-title;
 }
 
-.container{
-    /*@apply max-w-[1000px];*/
+.container {
+  /*@apply max-w-[1000px];*/
 
-    max-width:1200px!important;
-}
-
-p{
-    @apply text-paragraph;
+  max-width: 1200px !important;
 }
 
-.casual-blue-button{
-    @apply bg-blue px-3 md:px-9 py-2 mx-1 rounded-3xl text-white ;
+p {
+  @apply text-paragraph;
 }
-.casual-white-button{
-    @apply bg-white px-3 md:px-9 py-2 mx-1 rounded-3xl text-title;
+
+.p-white {
+  @apply text-white;
 }
-a{
-    @apply ease-in-out duration-500 border-b-[1px] border-transparent;
+
+.casual-blue-button {
+  @apply bg-blue px-3 md:px-9 py-2 mx-1 rounded-3xl text-white;
 }
-a:hover{
-    @apply border-black;
+.casual-white-button {
+  @apply bg-white px-3 md:px-9 py-2 mx-1 rounded-3xl text-title;
+}
+.casual-grey-button {
+  @apply bg-grey_bg px-3 md:px-9 py-2 mx-1 rounded-3xl text-title;
+}
+a {
+  @apply ease-in-out duration-500 border-b-[1px] border-transparent;
+}
+a:hover {
+  @apply border-black;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-*{
-    @apply font-sans;
+* {
+  @apply font-sans;
 }
-h2{
-    @apply text-2xl md:text-3xl;
+h2 {
+  @apply text-2xl md:text-3xl;
 }
-h3{
-    @apply text-xl md:text-2xl;
+h3 {
+  @apply text-xl md:text-2xl;
+}
+
+.form-row {
+  @apply flex items-center justify-between mb-2.5;
+}
+
+.form-label {
+  @apply text-white font-bold text-[16px] flex-1 text-left mr-2.5 whitespace-nowrap;
+}
+
+.form-input {
+  @apply flex-[3] bg-transparent text-[white] transition-[border-color] duration-[0.3s] ease-[ease] border-b-[white] border-[none] border-b border-solid;
+  align-items: end;
+  outline: none;
+}
+
+.form-error {
+  @apply flex items-start text-red-500 text-xs leading-[none] whitespace-nowrap;
 }

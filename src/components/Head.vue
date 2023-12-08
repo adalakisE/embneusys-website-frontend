@@ -27,8 +27,6 @@
               </span>
               </div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -108,7 +106,6 @@ export default{
           name: this.$t('menu.quote'),
           hash: '#contact'
         }
-
       ]
     }
   },

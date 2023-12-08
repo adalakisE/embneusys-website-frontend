@@ -1,41 +1,44 @@
-
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import '@/assets/css/tailwind.css'
-import '@/assets/css/hamburger.css';
-import VueI18n from 'vue-i18n'
+import Vue from "vue";
+import App from "./App.vue";
+import * as VeeValidate from "vee-validate";
+import { ValidationProvider } from "vee-validate";
+import router from "./router";
+import "@/assets/css/tailwind.css";
+import "@/assets/css/hamburger.css";
+import VueI18n from "vue-i18n";
 import el from "@/assets/lang/el";
-import en from "@/assets/lang/en"
-import VueMeta from 'vue-meta'
+import en from "@/assets/lang/en";
+import VueMeta from "vue-meta";
 
-Vue.use(VueMeta)
+Vue.use(VeeValidate);
+Vue.component("ValidationProvider", ValidationProvider);
 
-Vue.use(VueI18n)
-Vue.config.productionTip = false
+Vue.use(VueMeta);
 
+Vue.use(VueI18n);
+Vue.config.productionTip = false;
 
 const messages = {
   en,
-  el
-}
+  el,
+};
 
 Vue.mixin({
-  data(){
-    return{
-      email: 'info@embneusys.com'
-    }
-  }
-})
+  data() {
+    return {
+      email: "info@embneusys.com",
+    };
+  },
+});
 const i18n = new VueI18n({
-  locale: 'en',
-  fallbackLocale: 'en',
+  locale: "en",
+  fallbackLocale: "en",
   seo: true,
-  messages
-})
+  messages,
+});
 
 new Vue({
   i18n,
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
