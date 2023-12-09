@@ -139,6 +139,8 @@ export default {
       quotation:
         "Our representatives will get in touch for a customized quotation",
       esg: "Mining & environmental social governance (ESG)",
+      success: "Form submitted successfully!",
+      error: "Error submitting the form. Please try again.",
     },
     scheduleDemo: "schedule a demo",
     or: "or",

@@ -74,7 +74,7 @@
         />
         <img
           src="@/assets/images/ripos-1.png"
-          class="absolute top-0 right-[50px] w-[300px]"
+          class="absolute top-0 right-[50px] w-[300px] form-ripos"
         />
         <div class="flex items-start">
           <Form />

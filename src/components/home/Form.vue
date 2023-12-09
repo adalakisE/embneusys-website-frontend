@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col p-4 items-start mt-[30%]">
+  <div class="flex flex-col p-4 items-start form-container">
     <p
-      class="p-white mb-7 max-w-[60%] leading-10 text-left font-bold text-[3em]"
+      class="p-white mb-7 max-w-[60%] leading-10 text-left font-bold text-[3em] form-title"
     >
       {{ $t("faq.form.title") }}
     </p>
-    <ValidationObserver v-slot="{ invalid }" slim>
-      <form @submit.prevent="submitForm" class="max-w-md rounded-md shadow-lg">
+    <ValidationObserver v-slot="{ invalid }" slim ref="formValidator">
+      <form @submit.prevent="submitForm" class="max-w-md rounded-md">
         <ValidationProvider
           name="Company name"
           rules="required"
@@ -160,12 +160,18 @@
         >
           {{ $t("faq.form.button") }}
         </button>
+        <div v-if="showSuccess" class="success-message">
+          {{ $t("faq.form.success") }}
+        </div>
+        <div v-if="showError" class="error-message">
+          {{ $t("faq.form.error") }}
+        </div>
       </form>
     </ValidationObserver>
     <p class="text-l p-white font-bold mb-5 text-[1em]">
       {{ $t("faq.form.quotation") }}
     </p>
-    <p class="text-xl p-white font-bold text-[2em]">
+    <p class="text-xl p-white pb-3 font-bold text-[2em]">
       {{ $t("faq.form.esg") }}
     </p>
   </div>
@@ -189,7 +195,6 @@ export default {
     return {
       faqs: [1, 2, 3],
       activeFaqs: {},
-
       form: {
         companyName: "",
         email: "",
@@ -199,13 +204,11 @@ export default {
         level: "",
         machineries: "",
       },
+      showSuccess: false,
+      showError: false,
     };
   },
   methods: {
-    // submitForm() {
-    //   console.log("submitted successfully");
-    //   console.log(this.form);
-    // },
     async submitForm() {
       try {
         // Send form data as a POST request to the specified URL
@@ -214,17 +217,25 @@ export default {
           this.form
         );
 
-        // Handle the response if needed
+        this.showSuccess = true;
+
+        setTimeout(() => {
+          this.showSuccess = false;
+        }, 3000);
         console.log("Form submitted successfully:", response.data);
-        // Reset form after successful submission
         this.resetForm();
       } catch (error) {
+        this.showError = true;
+
+        setTimeout(() => {
+          this.showError = false;
+        }, 3000);
         console.error("Error submitting form:", error);
-        // Handle error here, show an error message, etc.
+      } finally {
+        // Do this regardless of success or failure
       }
     },
     resetForm() {
-      // Reset form fields after successful submission
       this.form = {
         companyName: "",
         email: "",
@@ -234,6 +245,9 @@ export default {
         level: "",
         machineries: "",
       };
+      this.$nextTick(() => {
+        this.$refs.formValidator.reset(); // Reset the ValidationObserver
+      });
     },
   },
 };

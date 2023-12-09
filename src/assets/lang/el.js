@@ -128,6 +128,8 @@ export default {
       quotation:
         "Οι εκπρόσωποί μας θα επικοινωνήσουν μαζί σας για μια εξατομικευμένη προσφορά",
       esg: "Mining & environmental social governance (ESG)",
+      success: "Η φόρμα υποβλήθηκε επιτυχώς!",
+      error: "Σφάλμα κατά την υποβολή της φόρμας. Παρακαλώ ξαναπροσπαθήστε",
     },
     scheduleDemo: "Δείτε ένα demo",
     or: "ή",
