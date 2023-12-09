@@ -56,7 +56,7 @@
         </transition>
       </div>
     </div>
-    <div id="contact" class="text-center mt-12">
+    <div class="text-center mt-12">
       <h4 class="text-xl text-paragraph">{{ $t("faq.partnership") }}</h4>
       <img
         src="@/assets/images/logos-v2.jpg"
@@ -67,7 +67,7 @@
         {{ $t("faq.why") }}
       </h2>
 
-      <div class="inline-block overflow-hidden relative w-full">
+      <div id="contact" class="inline-block overflow-hidden relative w-full">
         <img
           class="pointer-events-none absolute w-full h-full z-[-1] object-none"
           src="@/assets/images/contact-1.png"

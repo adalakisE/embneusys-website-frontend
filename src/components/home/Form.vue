@@ -150,12 +150,12 @@
 
         <button
           type="submit"
-          :disabled="invalid"
+          :disabled="invalid || isSubmitting"
           :class="{
             'casual-blue-button border-0 ease-in-out hover:border-0 hover:px-12 duration-500 border-b-[1px] border-transparent mt-4 mb-12':
               !invalid,
             'casual-grey-button border-0 border-b-[1px] border-grey-500 mt-4 mb-12':
-              invalid,
+              invalid || isSubmitting,
           }"
         >
           {{ $t("faq.form.button") }}
@@ -206,12 +206,13 @@ export default {
       },
       showSuccess: false,
       showError: false,
+      isSubmitting: false,
     };
   },
   methods: {
     async submitForm() {
+      this.isSubmitting = true;
       try {
-        // Send form data as a POST request to the specified URL
         const response = await axios.post(
           "https://embneusys-website-backend.onrender.com/feed/form",
           this.form
@@ -232,7 +233,7 @@ export default {
         }, 3000);
         console.error("Error submitting form:", error);
       } finally {
-        // Do this regardless of success or failure
+        this.isSubmitting = false;
       }
     },
     resetForm() {
