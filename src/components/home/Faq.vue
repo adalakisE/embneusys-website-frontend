@@ -69,7 +69,7 @@
 
       <div id="contact" class="inline-block overflow-hidden relative w-full">
         <img
-          class="pointer-events-none absolute w-full h-full z-[-1] object-none"
+          class="pointer-events-none opacity-50 absolute w-full h-full z-[-1] object-none"
           src="@/assets/images/contact-1.png"
         />
         <img
