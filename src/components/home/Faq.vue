@@ -67,19 +67,10 @@
         {{ $t("faq.why") }}
       </h2>
 
-      <div id="contact" class="inline-block overflow-hidden relative w-full">
-        <img
-          class="pointer-events-none absolute w-full h-full z-[-1] object-none"
-          src="@/assets/images/contact-1.png"
-        />
-        <img
-          src="@/assets/images/ripos-1.png"
-          class="absolute top-0 right-[50px] w-[300px] form-ripos"
-        />
-        <div class="flex items-start">
-          <Form />
-        </div>
-      </div>
+      <div
+        id="contact"
+        class="inline-block overflow-hidden relative w-full"
+      ></div>
 
       <img
         src="@/assets/images/logo-icon.png"
@@ -117,12 +108,8 @@
 
 <script>
 import Vue from "vue";
-import Form from "@/components/home/Form.vue";
 
 export default {
-  components: {
-    Form,
-  },
   data() {
     return {
       faqs: [1, 2, 3],

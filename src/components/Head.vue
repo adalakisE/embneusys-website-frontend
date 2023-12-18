@@ -7,18 +7,18 @@
             src="../assets/logo.png"
             alt="logo"
             class="w-[220px] max-w-[100%] cursor-pointer"
-            @click="scrollToTop"
+            @click="goToLandingPage"
           />
         </div>
         <div class="md:col-span-9 flex justify-end items-center">
-          <div class="desktop-menu hidden md:block">
+          <div v-if="showItems === 'show'" class="desktop-menu hidden md:block">
             <a
               v-for="item in menu"
               :key="item.hash"
               :href="item.hash"
               class="mr-5"
-              >{{ item.name }}</a
-            >
+              >{{ item.name }}
+            </a>
           </div>
 
           <a
@@ -32,6 +32,7 @@
           </a>
 
           <div
+            v-if="showItems === 'show'"
             class="ml-5 block md:hidden relative"
             @click="showMobileMenu = !showMobileMenu"
           >
@@ -88,6 +89,9 @@ a.current {
 </style>
 <script>
 export default {
+  props: {
+    showItems: String,
+  },
   computed: {
     availableLocales() {
       return this.locales.filter((x) => x.code !== this.$i18n.locale);
@@ -142,6 +146,13 @@ export default {
     },
     scrollToTop() {
       window.scrollTo(0, 0);
+    },
+    goToLandingPage() {
+      if (this.$route.path !== "/") {
+        this.$router.push({ path: "/" });
+      } else {
+        this.scrollToTop();
+      }
     },
   },
 };

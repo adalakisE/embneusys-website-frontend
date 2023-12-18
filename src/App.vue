@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <the-header/>
-    <router-view class="mt-12"/>
-    <the-footer/>
+    <!-- <the-header/> -->
+    <router-view class="mt-12" />
+    <!-- <the-footer/> -->
   </div>
 </template>
 
@@ -15,20 +15,15 @@
 </style>
 
 <script>
-import TheHeader from "@/components/Head"
-import TheFooter from "@/components/Footer"
-export default{
-
-  components:{TheHeader, TheFooter},
-
-  metaInfo(){
-    return{
-      title: 'Home',
-      titleTemplate: '%s — Embneusys',
+export default {
+  metaInfo() {
+    return {
+      title: "Home",
+      titleTemplate: "%s — Embneusys",
       htmlAttrs: {
-        lang: this.$i18n.locale
+        lang: this.$i18n.locale,
       },
-    }
-  }
-}
+    };
+  },
+};
 </script>

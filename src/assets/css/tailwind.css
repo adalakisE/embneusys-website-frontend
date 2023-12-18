@@ -79,14 +79,23 @@ h3 {
 .form-title {
   @media (max-width: 768px) {
     font-size: 2rem;
+    max-width: 100%;
   }
   @media (max-width: 480px) {
     font-size: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+.contact-container {
+  @media (max-width: 768px) {
+    margin-top: 75px;
   }
 }
 
 .form-container {
-  margin-top: 30%;
+  margin-top: 10%;
 
   @media (max-width: 768px) {
     margin-top: 0;
@@ -96,6 +105,20 @@ h3 {
 .form-ripos {
   @media (max-width: 768px) {
     display: none;
+  }
+}
+
+.submit-btn {
+  @apply border-0 border-b-[1px] pr-7 pl-7 mt-4 mb-12;
+
+  @media (max-width: 768px) {
+    margin: 10px 0;
+  }
+}
+
+.form-text {
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
   }
 }
 

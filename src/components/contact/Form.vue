@@ -152,10 +152,9 @@
           type="submit"
           :disabled="invalid || isSubmitting"
           :class="{
-            'casual-blue-button border-0 ease-in-out hover:border-0 hover:px-12 duration-500 border-b-[1px] border-transparent mt-4 mb-12':
+            'casual-blue-button border-0 ease-in-out hover:border-0 hover:px-12 duration-500  border-transparent submit-btn':
               !invalid,
-            'casual-grey-button border-0 border-b-[1px] border-grey-500 mt-4 mb-12':
-              invalid || isSubmitting,
+            'casual-grey-button border-0 submit-btn': invalid || isSubmitting,
           }"
         >
           {{ $t("faq.form.button") }}
@@ -168,10 +167,10 @@
         </div>
       </form>
     </ValidationObserver>
-    <p class="text-l p-white font-bold mb-5 text-[1em]">
+    <p class="text-l p-white font-bold mb-5 text-[1em] form-text">
       {{ $t("faq.form.quotation") }}
     </p>
-    <p class="text-xl p-white pb-3 font-bold text-[2em]">
+    <p class="text-xl p-white pb-3 font-bold text-[2em] form-text">
       {{ $t("faq.form.esg") }}
     </p>
   </div>
