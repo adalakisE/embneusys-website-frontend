@@ -2,7 +2,7 @@
   <div>
     <the-header showItems="none" />
     <img
-      class="pointer-events-none absolute w-full h-full z-[-1] object-none"
+      class="pointer-events-none absolute w-full h-[1120px] z-[-1] object-cover"
       src="@/assets/images/contact-1.png"
     />
     <div class="flex items-start contact-container">
