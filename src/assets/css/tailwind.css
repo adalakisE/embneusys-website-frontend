@@ -78,24 +78,28 @@ h3 {
 }
 
 .form-title {
+  text-shadow: 2px -1px 25px rgba(0, 0, 0, 1);
+  line-height: 3.5rem;
+
   @media (max-width: 768px) {
     font-size: 2rem;
     max-width: 100%;
+    line-height: 2.5rem;
   }
 
   @media (max-width: 480px) {
     font-size: 1.5rem;
     max-width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    line-height: 2.5rem;
   }
 }
 
 .contact-container {
   justify-content: center;
-
-  @media (max-width: 768px) {
-    margin-top: 75px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .form-container {
@@ -112,6 +116,25 @@ h3 {
   }
 }
 
+@media (max-width: 768px) {
+  .form-ripos {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-ripos--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-ripos--mobile {
+    width: 75%;
+    max-width: 175px;
+  }
+}
+
 .submit-btn {
   @apply border-0 border-b-[1px] pr-7 pl-7 mt-4 mb-12;
 
@@ -122,6 +145,31 @@ h3 {
 
 .form-text {
   @media (max-width: 480px) {
+    font-size: 0.75rem;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    padding: 30px;
     font-size: 0.75rem;
   }
 }

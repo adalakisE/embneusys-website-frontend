@@ -136,6 +136,10 @@ export default {
       multipleOrSingleLevel: "Multiple or single level",
       numberOfMachineries: "Number of machineries",
       button: "Submit",
+      submitting: "Submitting...",
+      successfulSubmit:
+        "Your contact information is received. Thank you for your interest in Embneusys!",
+      errorSubmit: "Error submitting the form. Please try again.",
       quotation:
         "Our representatives will get in touch for a customized quotation",
       esg: "Mining & environmental social governance (ESG)",

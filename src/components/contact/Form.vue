@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col p-4 items-start form-container">
     <p
-      class="p-white mb-7 max-w-[60%] leading-10 text-left font-bold text-[3em] form-title"
+      class="p-white mb-7 max-w-[60%] text-left font-bold text-[3em] form-title"
     >
       {{ $t("faq.form.title") }}
     </p>
@@ -23,7 +23,6 @@
               id="companyName"
               class="form-input"
             />
-            <!-- onkeypress="this.style.width = ((this.value.length + 1) * 10) + 'px';" -->
             <span v-if="errors[0]" class="form-error">{{ errors[0] }}</span>
           </div>
         </ValidationProvider>
@@ -159,11 +158,15 @@
         >
           {{ $t("faq.form.button") }}
         </button>
-        <div v-if="showSuccess" class="success-message">
-          {{ $t("faq.form.success") }}
-        </div>
-        <div v-if="showError" class="error-message">
-          {{ $t("faq.form.error") }}
+
+        <div v-if="showModal" class="modal-overlay">
+          <div class="modal">
+            <p v-if="isSubmitting">{{ $t("faq.form.submitting") }}</p>
+            <p v-if="showSuccess">
+              {{ $t("faq.form.successfulSubmit") }}
+            </p>
+            <p v-if="showError">{{ $t("faq.form.errorSubmit") }}</p>
+          </div>
         </div>
       </form>
     </ValidationObserver>
@@ -206,11 +209,14 @@ export default {
       showSuccess: false,
       showError: false,
       isSubmitting: false,
+      showModal: false,
     };
   },
   methods: {
     async submitForm() {
       this.isSubmitting = true;
+      this.showModal = true;
+
       try {
         const response = await axios.post(
           "https://embneusys-website-backend.onrender.com/feed/form",
@@ -221,7 +227,8 @@ export default {
 
         setTimeout(() => {
           this.showSuccess = false;
-        }, 3000);
+          this.showModal = false;
+        }, 4000);
         console.log("Form submitted successfully:", response.data);
         this.resetForm();
       } catch (error) {
@@ -229,7 +236,8 @@ export default {
 
         setTimeout(() => {
           this.showError = false;
-        }, 3000);
+          this.showModal = false;
+        }, 4000);
         console.error("Error submitting form:", error);
       } finally {
         this.isSubmitting = false;

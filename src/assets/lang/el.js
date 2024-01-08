@@ -125,6 +125,10 @@ export default {
       multipleOrSingleLevel: "Αριθμός επιπέδων",
       numberOfMachineries: "Αριθμός μηχανημάτων",
       button: "Υποβολή",
+      submitting: "Γίνεται υποβολή φόρμας...",
+      successfulSubmit:
+        "Τα στοιχεία επικοινωνίας σας έχουν αποθηκευτεί. Ευχαριστούμε για το ενδιαφέρον σας στην Embneusys!",
+      errorSubmit: "Σφάλσμα υποβολής. Παρακαλώ προσπαθήστε αργότερα",
       quotation:
         "Οι εκπρόσωποί μας θα επικοινωνήσουν μαζί σας για μια εξατομικευμένη προσφορά",
       esg: "Mining & environmental social governance (ESG)",
