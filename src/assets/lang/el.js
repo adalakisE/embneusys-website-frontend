@@ -120,7 +120,7 @@ export default {
       company: "Όνομα εταιρίας",
       email: "Email",
       location: "Περιοχή",
-      mineSize: "Μέγεθος λατομείου",
+      mineSize: "Μέγεθος λατομείου (τ.μ.)",
       pitOrUnderground: "Επίγειο ή υπόγειο",
       multipleOrSingleLevel: "Αριθμός επιπέδων",
       numberOfMachineries: "Αριθμός μηχανημάτων",

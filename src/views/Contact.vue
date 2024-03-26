@@ -7,11 +7,7 @@
     />
     <div class="flex flex-col contact-container">
       <Form />
-      <img src="@/assets/images/ripos-1.png" class="form-ripos--mobile" />
-      <img
-        src="@/assets/images/ripos-1.png"
-        class="absolute top-0 mt-[70px] right-[50px] w-[300px] form-ripos"
-      />
+      <img src="@/assets/images/ripos-1.png" class="absolute form-ripos" />
     </div>
     <the-footer showItems="none" />
   </div>

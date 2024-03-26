@@ -47,7 +47,7 @@
           </div>
         </ValidationProvider>
 
-        <ValidationProvider
+        <!-- <ValidationProvider
           name="location"
           rules="required"
           v-slot="{ errors }"
@@ -145,7 +145,7 @@
             />
             <span v-if="errors[0]" class="form-error">{{ errors[0] }}</span>
           </div>
-        </ValidationProvider>
+        </ValidationProvider> -->
 
         <button
           type="submit"

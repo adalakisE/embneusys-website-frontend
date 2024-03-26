@@ -131,7 +131,7 @@ export default {
       company: "Company Name",
       email: "Email",
       location: "Location",
-      mineSize: "Mine size",
+      mineSize: "Mine size (sq.m.)",
       pitOrUnderground: "Pit or Underground",
       multipleOrSingleLevel: "Multiple or single level",
       numberOfMachineries: "Number of machineries",
