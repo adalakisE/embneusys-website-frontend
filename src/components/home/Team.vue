@@ -31,6 +31,7 @@
                 alt="logo text"
                 class="inline ml-1"
                 width="140"
+                max-height="140"
               />
               <div
                 class="text-white bg-blue border px-2 py-2 rounded-tr-[40px] rounded-br-[40px] mt-2"

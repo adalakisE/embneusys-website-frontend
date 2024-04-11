@@ -168,7 +168,7 @@ export default {
       text: "George holds a PhD in Electrical Engineering (Harvard University), MSc in Electrical Engineering and has interned at Hilti R&D",
     },
     3: {
-      name: "Eleftherios Adalakis (COO)",
+      name: "Lefteris Adalakis (COO)",
       photo: "@/assets/images/team/adalakis.jpeg",
       linkedin: "https://linkedin.com/in/eleftherios-adalakis-a0b256158/",
       text: "Eleftherios holds an MSc in Electrical Engineering (Aristotle University), has interned at Hilti IoT and has been a Product Manager at Hilti Marketing. Currently a Front End developer at Cognizant (CH)",
