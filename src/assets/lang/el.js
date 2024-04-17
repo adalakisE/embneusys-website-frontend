@@ -155,7 +155,7 @@ export default {
       name: "Γιώργος Κυριαζίδης (CTO)",
       photo: "@/assets/images/team/kyriazidis.jpeg",
       linkedin: "https://linkedin.com/in/georgios-kyriazidis/",
-      text: "ο Γιώργος έχει διδακτορικό Ηλεκτρολόγου Μηχανικού (Πανεπιστήμιο Harvard), MSc Ηλεκτρολόγου Μηχανικού και έχει κάνει πρακτική στο Hilti R&D",
+      text: "Ο Γιώργος έχει διδακτορικό Ηλεκτρολόγου Μηχανικού (Πανεπιστήμιο Harvard), MSc Ηλεκτρολόγου Μηχανικού και έχει κάνει πρακτική στο Hilti R&D",
     },
     3: {
       name: "Λευτέρης Αδαλάκης (COO)",
